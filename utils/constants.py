@@ -1,0 +1,1 @@
+ALLOWED_WEBSITE_URLS = ["scrapmatic.vercel.app", "www.webranch.team", "hazim-tulumovic.vercel.app", "www.wikipedia.org"]

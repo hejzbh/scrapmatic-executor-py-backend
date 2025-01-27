@@ -18,3 +18,4 @@ def connectToDatabase():
 db = connectToDatabase()
 app = createApp()
 socketio = SocketIO(app, cors_allowed_origins="http://localhost:3000")
+

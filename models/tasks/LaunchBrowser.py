@@ -17,7 +17,7 @@ class LaunchBrowserTask(Task):
             # Check if the website URL is provided
             if websiteUrl is None:
                 raise ValueError("No website url provided")
-            k
+            
             # Ensure the URL starts with http or https
             if not websiteUrl.startswith(("http://", "https://")):
                 websiteUrl = f"https://{websiteUrl}"

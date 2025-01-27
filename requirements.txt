@@ -12,4 +12,3 @@ jinja2
 markupsafe
 packaging
 werkzeug
-keras

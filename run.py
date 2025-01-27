@@ -3,7 +3,7 @@ from routes.workflow import init_routes
 from flask_cors import CORS
 
 # Cors
-CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/*": {"origins": ["http://localhost:3000", "https://scrapmatic.vercel.app"]}})
 
 # Endpoints / Routes
 init_routes(app)

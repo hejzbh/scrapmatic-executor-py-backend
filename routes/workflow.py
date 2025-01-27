@@ -10,6 +10,17 @@ from services.updateDatabaseModel import updateDatabaseModel
 """
 
 def init_routes(app):
+    @app.route("/test", methods=["GET"])
+    async def getTest():
+        try:
+            return jsonify({
+                "message": "Successfully get", 
+            }), 200
+        except:
+            return jsonify({
+                "message": "Error", 
+            }), 500
+
     @app.route("/run-workflow", methods=["POST"])
     async def run_workflow():
         try:

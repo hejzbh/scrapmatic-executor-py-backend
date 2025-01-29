@@ -11,7 +11,7 @@ def createApp():
    return Flask(__name__)
 
 def connectToDatabase():
-   client = MongoClient("mongodb+srv://hejzbh:h0E0NeoKDoZjn9id@scrapmatic.s02zw.mongodb.net/Scrapmatic")
+   client = MongoClient("mongodb_database_url")
    db = client["Scrapmatic"]
    return db
 
